@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="24sp"
+        android:paddingRight="24sp">
+
+
+        <EditText
+            android:id="@+id/event_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="28sp"
+            android:ems="10"
+            android:inputType="text"
+            android:hint="Enter event name" />
+
+        <EditText
+            android:id="@+id/event_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:hint="Enter event date"
+            android:layout_marginTop="50sp"
+            android:layout_below="@+id/event_venue"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:id="@+id/event_venue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/event_name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50sp"
+            android:ems="10"
+            android:inputType="text"
+            android:hint="Enter the venue" />
+
+        <EditText
+            android:id="@+id/event_details"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/event_date"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50sp"
+            android:ems="10"
+            android:inputType="text"
+            android:hint="Event Details" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Create Event"
+            android:id="@+id/button"/>
+
+    </LinearLayout>
+</ScrollView>
